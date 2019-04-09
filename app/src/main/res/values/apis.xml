@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- URL Root -->
+    <string name="url_req">http://15.164.4.223/</string>
+    <string name="url_root">http://15.164.4.223/cmn/api/app_version.php</string>
+    <string name="app_version">cmn/api/app_version.php?m_mac=%1$s</string>
+
+    <string name="join_register">auth/signup.php?email=%1$s&amp;nickname=%2$s&amp;password=%3$s</string>
+</resources>
+
