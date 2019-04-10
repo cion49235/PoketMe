@@ -54,6 +54,13 @@
             android:windowSoftInputMode="stateHidden|adjustResize"
             android:name="kr.picture.poketme.activity.JoinActivity"/>
 
+        <activity
+            android:theme="@style/NoTitle"
+            android:screenOrientation="sensorPortrait"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:windowSoftInputMode="stateHidden|adjustResize"
+            android:name="kr.picture.poketme.activity.FindMyinfoActivity"/>
+
     </application>
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />

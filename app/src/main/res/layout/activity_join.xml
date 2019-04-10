@@ -117,6 +117,39 @@
             <LinearLayout
                 android:layout_marginLeft="30dp"
                 android:layout_marginRight="30dp"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+                <EditText
+                    android:id="@+id/edit_phone_confirm"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="5dp"
+                    android:imeOptions="actionSearch"
+                    android:inputType="text"
+                    android:hint="@string/joinActivity_08"
+                    android:lines="1"
+                    android:padding="10dp"
+                    android:text=""
+                    android:textColorHint="#a3d1f3"
+                    android:textColor="@color/colorBlack"
+                    android:password="true"
+                    android:textSize="@dimen/text_m"
+                    android:background="@drawable/edit_blank"/>
+                <Button
+                    android:id="@+id/bt_phone_confirm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/joinActivity_09"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
                 android:layout_marginTop="5dp"
                 android:orientation="vertical"
                 android:paddingLeft="10dp"

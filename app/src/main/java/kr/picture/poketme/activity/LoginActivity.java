@@ -17,7 +17,7 @@ import kr.picture.poketme.cms.base.BaseActivity;
 import kr.picture.poketme.util.Intent_Helper;
 
 public class LoginActivity extends BaseActivity implements View.OnClickListener {
-    private LinearLayout layout_join;
+    private LinearLayout layout_join, layout_find_info;
     private EditText edit_id, edit_password;
     private Button bt_login_register;
     Context context;
@@ -39,6 +39,8 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener 
         edit_password = (EditText)findViewById(R.id.edit_password);
         bt_login_register = (Button)findViewById(R.id.bt_login_register);
         bt_login_register.setOnClickListener(this);
+        layout_find_info = (LinearLayout)findViewById(R.id.layout_find_info);
+        layout_find_info.setOnClickListener(this);
     }
 
     /*TODO 로그인프로세스*/
@@ -53,6 +55,8 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener 
             do_login_register();
         }else if(v == layout_join){//회원가입
             Intent_Helper.default_Intent(context, JoinActivity.class);
+        }else if(v == layout_find_info){
+            Intent_Helper.default_Intent(context, FindMyinfoActivity.class);
         }
     }
 }

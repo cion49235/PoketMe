@@ -5,7 +5,7 @@
     <string name="nav_header_title">Android Studio</string>
     <string name="nav_header_subtitle">android.studio@android.com</string>
     <string name="nav_header_desc">Navigation header</string>
-    <string name="action_settings">Settings</string>
+    <string name="action_search">Search</string>
 
 
     <string name="introAcitivty_01">"소프트웨어 업데이트"</string>
@@ -56,7 +56,11 @@
     <string name="joinActivity_12">"패스워드"</string>
     <string name="joinActivity_13">"패스워드 재입력"</string>
 
+    <string name="findmyinfoActivity_01">"회원님의 아이디는 "</string>
+    <string name="findmyinfoActivity_02">" 입니다."</string>
+    <string name="findmyinfoActivity_03">"회원님의 임시 비밀번호는"</string>
 
+    <string name="txt_bar_bottom01">"#TAG"</string>
 
     <string name="txt_finish_yes">"종료"</string>
 </resources>
