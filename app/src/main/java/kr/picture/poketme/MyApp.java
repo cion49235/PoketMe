@@ -4,6 +4,9 @@ import android.app.Activity;
 import android.app.Application;
 import android.content.Context;
 import android.support.multidex.MultiDex;
+import android.support.multidex.MultiDexApplication;
+
+import com.squareup.leakcanary.LeakCanary;
 
 import kr.picture.poketme.util.NetworkHelper;
 
@@ -15,9 +18,19 @@ public class MyApp extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
+//        setLeakCanary();
         INSTANCE = this;
         obj = this;
         context = this;
+    }
+
+    private void setLeakCanary() {
+        if (LeakCanary.isInAnalyzerProcess(this)) {
+            // This process is dedicated to LeakCanary for heap analysis.
+            // You should not init your app in this process.
+            return;
+        }
+        LeakCanary.install(this);
     }
 
     @Override

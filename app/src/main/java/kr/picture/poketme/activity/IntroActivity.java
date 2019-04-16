@@ -38,8 +38,8 @@ public class IntroActivity extends BaseActivity {
         context = this;
         activity = this;
         alert_view = true;
-        version_check();
-//        intent_next();
+//        version_check();
+        intent_next();
     }
 
     @Override

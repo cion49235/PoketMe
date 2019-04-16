@@ -63,5 +63,7 @@
     <string name="txt_bar_bottom01">"#TAG"</string>
 
     <string name="txt_finish_yes">"종료"</string>
+    <string name="txt_default">"Default"</string>
+    <string name="error_gif">x 나 y의 크기는 %1$dpx 이상, 파일 크기는 %2$sM 이하여야 합니다.</string>
 </resources>
 
